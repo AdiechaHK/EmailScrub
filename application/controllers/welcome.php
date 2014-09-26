@@ -19,7 +19,22 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		// $this->load->view('welcome_message');
+		render_page($this,'home');
+	}
+
+	public function test() {
+		render_page($this, 'testing');
+	}
+
+	// Dhaval needs to modify this method
+	public function csv() {
+		echo "this page needs to implement by dhaval. " . anchor("welcome", "Back");
+	}
+
+	// Bhavik needs to modify this method
+	public function api() {
+		echo "this service needs to implement by bhavik. " . anchor("welcome", "Back");
 	}
 }
 
