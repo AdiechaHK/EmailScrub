@@ -1,0 +1,10 @@
+{
+	"autoload":
+	{
+		"classmap": ["email_validation.php"]
+	}
+,
+	"require": 
+	{
+		"phpclasses/phpresolver": "1.0.1"
+	}}
